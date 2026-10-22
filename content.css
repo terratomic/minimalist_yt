@@ -1,0 +1,35 @@
+html.minimalist-hide-comments ytd-comments,
+html.minimalist-hide-comments #comments {
+  display: none !important;
+}
+
+html.minimalist-hide-sidebar
+  ytd-watch-flexy[is-two-columns_]
+  #secondary,
+html.minimalist-hide-sidebar #secondary {
+  display: none !important;
+}
+
+html.minimalist-hide-sidebar ytd-watch-flexy[is-two-columns_]
+  #primary {
+  max-width: 100% !important;
+}
+
+html.minimalist-hide-shorts ytd-rich-shelf-renderer:has(a[href^="/shorts/"]),
+html.minimalist-hide-shorts ytd-reel-shelf-renderer,
+html.minimalist-hide-shorts ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+html.minimalist-hide-shorts ytd-video-renderer:has(a[href^="/shorts/"]),
+html.minimalist-hide-shorts ytd-mini-guide-entry-renderer:has(a[href^="/shorts/"]),
+html.minimalist-hide-shorts ytd-guide-entry-renderer:has(a[href^="/shorts/"]) {
+  display: none !important;
+}
+
+html.minimalist-hide-recommendations ytd-watch-next-secondary-results-renderer,
+html.minimalist-hide-recommendations ytd-compact-video-renderer,
+html.minimalist-hide-recommendations #related {
+  display: none !important;
+}
+
+html.minimalist-hide-recommendations ytd-watch-flexy[is-two-columns_] #primary {
+  max-width: 100% !important;
+}

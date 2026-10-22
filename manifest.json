@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Minimalist YouTube",
+  "version": "1.0.0",
+  "description": "A calmer YouTube: hide comments, sidebars, Shorts, and the home feed.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Minimalist YouTube",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://youtube.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

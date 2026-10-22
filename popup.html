@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimalist YouTube</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="hero">
+        <div class="mark" aria-hidden="true"><span></span></div>
+        <div>
+          <p class="eyebrow">Focus mode</p>
+          <h1>Minimalist YouTube</h1>
+        </div>
+      </header>
+
+      <p class="intro">Keep the video. Lose the noise.</p>
+
+      <section class="settings" aria-label="Visibility settings">
+        <label class="setting">
+          <span><strong>Comments</strong><small>Remove the conversation below videos</small></span>
+          <input type="checkbox" data-setting="comments" />
+          <i class="switch" aria-hidden="true"></i>
+        </label>
+        <label class="setting">
+          <span><strong>Side bar</strong><small>Give the video your full attention</small></span>
+          <input type="checkbox" data-setting="sidebar" />
+          <i class="switch" aria-hidden="true"></i>
+        </label>
+        <label class="setting">
+          <span><strong>Shorts</strong><small>Hide Shorts shelves and links</small></span>
+          <input type="checkbox" data-setting="shorts" />
+          <i class="switch" aria-hidden="true"></i>
+        </label>
+        <label class="setting">
+          <span><strong>Recommendations</strong><small>Hide suggested videos beside playback</small></span>
+          <input type="checkbox" data-setting="recommendations" />
+          <i class="switch" aria-hidden="true"></i>
+        </label>
+      </section>
+
+      <footer><span class="status-dot"></span><span id="status">Changes apply instantly</span></footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
