@@ -2,6 +2,8 @@
 
 A tiny Chrome extension for a calmer YouTube. It can hide comments, the watch-page side bar, Shorts, and video recommendations. Normal homepage videos remain visible.
 
+![Preview](preview.png)
+
 ## Install locally
 
 1. Open `chrome://extensions` in Chrome.
